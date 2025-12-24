@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+.react-flow__node {
+  font-size: 12px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: grab;
+}
+
+.react-flow__node:active {
+  cursor: grabbing;
+}
+
+.react-flow__node.selected {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: #6366f1;
+  border: 2px solid #1a1a1a;
+}
+
+.react-flow__edge-path {
+  stroke: #4b5563;
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #6366f1;
+}
+
+.react-flow__controls {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background: #1a1a1a;
+  border: none;
+  border-bottom: 1px solid #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.react-flow__controls-button:hover {
+  background: #2a2a2a;
+}
+
+.react-flow__minimap {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
